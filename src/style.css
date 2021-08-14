@@ -1,0 +1,70 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.hero-container{
+    position: relative;
+}
+.hero-container img{
+    display: block;
+    width: 100%;
+    height: 30vh;
+    object-fit: cover;
+}
+.hero-container h1{
+    position: absolute;
+    font-size: clamp(3rem, 8vw, 15rem);
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -75%);
+    color: rgb(241, 185, 28);
+    text-shadow: 0 2px black;
+}
+
+.tab-container{
+    display: flex;
+    justify-content: center;
+}
+.tab-container .tab{
+    padding: 1rem;
+    background-color: rgb(241, 185, 28);
+    cursor: pointer;
+    font-size: clamp(1rem, 2.5vw, 1.2rem);
+}
+.tab-container .tab:nth-child(1){
+    border-bottom-left-radius: 4px;
+}
+.tab-container .tab:nth-child(3){
+    border-bottom-left-radius: 4px;
+}
+
+.home-content-container, .menu-content-container {
+    width: clamp(10rem, 90vw, 90vw);
+    background-color: rgb(241, 185, 28);
+    margin: 1rem auto 0 auto;
+    border-radius: 4px;
+}
+h2{
+    text-align: center;
+    padding: 1rem 0;
+}
+.home-content-container p{
+    text-align: center;
+    padding: 0 1rem 1rem 1rem;
+}
+
+.menu-content-container div{
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    padding-bottom: 1rem;
+    grid-gap: 0.5rem;
+}
+.menu-content-container div img{
+    margin: 0 auto;
+    width: 250px;
+    height: auto;
+    cursor: pointer;
+}
